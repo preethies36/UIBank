@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Page_AccountCreationResult",
+  "Type": "Screen",
+  "Id": "xH8pKXYvUUKpOFC700wkzA",
+  "Reference": "UtFUQI9ND0e4PF4l4r9ArQ/xH8pKXYvUUKpOFC700wkzA",
+  "ParentRef": "UtFUQI9ND0e4PF4l4r9ArQ/qiB5dbRXEkaO8ck6fdcAQA",
+  "Created": "2024-02-12T15:16:57.3056072Z",
+  "Updated": "2024-02-12T15:17:01.8287432Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

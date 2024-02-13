@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iBlsj4LbbE6sUqXno7djhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts/account-apply" CvElementArea="286, 361, 794, 56" CvType="InputBox" DesignTimeRectangle="288, 361, 789, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT accountNickname'" FullSelectorArgument="&lt;webctrl id='accountNickname' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accountNickname' tag='INPUT' type='text' class='form-control uibank-input ng-pristine ng-valid ng-touched' aaname='Give a Nickname to Your Account' /&gt;" Guid="53db6bc3-c318-47d5-9796-6d3c355056ba" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="286, 343, 190, 12" CvTextArgument="Give a Nickname to Your Account" CvType="Text" DesignTimeRectangle="288, 342, 187, 19" ElementType="Text" FriendlyName="'Give a'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Give a Nickname to Your Account' check:innerText='Give a Nickname to Your Account' /&gt;" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2bcb4201bc8591af42677bd518fce2fa.png" xmlns="">0XJe7ctupE0e_ZOMqoxh2Kg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

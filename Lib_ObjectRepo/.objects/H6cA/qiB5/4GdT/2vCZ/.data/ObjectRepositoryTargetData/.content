@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Oh-reAUxc0yW3HrBoJ3U1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts" CvElementArea="689, 335, 345, 53" CvTextArea="765, 352, 193, 19" CvTextArgument="Apply For New Account" CvType="Button" DesignTimeRectangle="691, 336, 342, 50" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Apply For New Account'" FullSelectorArgument="&lt;webctrl aaname='Apply For New Account ' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Apply For New Account ' tag='DIV' type='' class='btn btn-white card-header-item' check:innerText='Apply For New Account' /&gt;" Guid="f1efccfe-cccf-4161-b5f4-d9e432665794" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="281579d0518c80ef44d4562c7b79429e.png" xmlns="">0RAeR1yWYF0OFtfRXs8omow</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

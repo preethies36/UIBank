@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Text_AccountName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "CPxM00hyHUeM0ogibv9F0Q",
+  "Reference": "UtFUQI9ND0e4PF4l4r9ArQ/CPxM00hyHUeM0ogibv9F0Q",
+  "ParentRef": "UtFUQI9ND0e4PF4l4r9ArQ/VgZ9FJhUaEK_37x0OqbKjQ",
+  "Created": "2024-02-12T15:13:02.1699817Z",
+  "Updated": "2024-02-12T15:13:18.7862671Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

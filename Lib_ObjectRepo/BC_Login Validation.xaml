@@ -1,0 +1,229 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BC_Login_Validation" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Str_UserName" Type="InArgument(x:String)" />
+    <x:Property Name="Str_Password" Type="InArgument(x:String)" />
+    <x:Property Name="str_Result" Type="OutArgument(x:String)" />
+  </x:Members>
+  <this:BC_Login_Validation.Str_UserName>
+    <InArgument x:TypeArguments="x:String" />
+  </this:BC_Login_Validation.Str_UserName>
+  <this:BC_Login_Validation.Str_Password>
+    <InArgument x:TypeArguments="x:String" />
+  </this:BC_Login_Validation.Str_Password>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
+  <sap:VirtualizedContainerService.HintSize>658,2956</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>BC_Login_Validation_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BC_Login_Validation" sap:VirtualizedContainerService.HintSize="668,2891" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="str_BrowserUrl" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Page_Login" sap:VirtualizedContainerService.HintSize="606,2780" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="e2c1bca8-a3fe-4b00-9ac9-9b382bc980bb" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,2563" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="int_RepID" />
+              <Variable x:TypeArguments="x:String" Name="str_TestID02" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="510,133" sap2010:WorkflowViewState.IdRef="StepStatus_1" ReportId="[int_RepID]" Status="Pass" StepDescription="Verfiy Application Launch" StepName="Launch Application" TakeScreenshot="True" TestId="[str_TestID02]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Text_Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[Str_UserName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/welcome" ContentHash="mWxgZnx4sEKsfy_YYLb3Zg" CvElementArea="343, 525, 168, 54" CvType="InputBox" DesignTimeRectangle="344, 526, 166, 53" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT username'" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Username' /&gt;" Guid="71b76ca5-afda-4ea8-b6ea-58cc9d4662ea" InformativeScreenshot="d4f8047a8f0192148f0a0154bc2a04a4.png" IsResponsive="True" Reference="UtFUQI9ND0e4PF4l4r9ArQ/2HQBipbCm0-YrGRsNmS5Fg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="342, 498, 61, 11" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="344, 496, 58, 19" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Username' check:innerText='Username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Text_Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[Str_Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/welcome" ContentHash="Q3ptEuqvXk206BLhsCXKVw" CvElementArea="344, 637, 167, 53" CvType="InputBox" DesignTimeRectangle="344, 637, 166, 53" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Password' /&gt;" Guid="cad1c382-bbaa-4c7b-9a89-e7a4c78b5e3e" InformativeScreenshot="ac99ad1dc52a815c99e56d10dc294e9f.png" Reference="UtFUQI9ND0e4PF4l4r9ArQ/J1cDyi5LEEG73sSG261jBA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="342, 608, 56, 12" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="344, 607, 54, 19" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='uibank-label' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button_SignIn'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/welcome" ContentHash="W81bhR8M50GWdedXsrdptQ" DesignTimeRectangle="377, 714, 101, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='btn btn-white col-md-12' aaname='Sign In' check:innerText='Sign In' /&gt;" Guid="37b450bc-a6ca-4a47-bcb4-83ba29d04457" InformativeScreenshot="651196d6a8b4f47e034ceeeb9e76622e.png" Reference="UtFUQI9ND0e4PF4l4r9ArQ/C5rY9Qe1A0yONGtjstHH4Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="510,133" sap2010:WorkflowViewState.IdRef="StepStatus_2" ReportId="[int_RepID]" Status="Pass" StepDescription="Verfify Pop up Ok button" StepName="Accept Aggrement" TakeScreenshot="True" TestId="[str_TestID02]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Click_Popup'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/welcome" ContentHash="6ND_AtOs2UOMVBAeiCV6Lg" CvElementArea="542, 551, 265, 51" CvTextArea="564, 566, 201, 20" CvTextArgument="lagree to the Privacy Policy" CvType="Button" DesignTimeRectangle="542, 551, 264, 50" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'I agree'" FullSelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-0' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='I agree to the Privacy Policy →' parentid='mat-mdc-dialog-0' tag='BUTTON' type='button' class='btn center-button btn-black' check:innerText='I agree to the Privacy Policy →' /&gt;" Guid="93975dd2-0f82-4757-8c67-119123f37cce" InformativeScreenshot="95ff97edeba737263902b7c3a498157b.png" Reference="UtFUQI9ND0e4PF4l4r9ArQ/2ibGjF0oyEuUEY0qDPN0nA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="379, 207, 607, 417" FriendlyName="'⚠️Important Notice✕UiBa…'" FullSelectorArgument="&lt;webctrl tag='MAT-DIALOG-CONTENT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='MAT-DIALOG-CONTENT' type='' class='mat-mdc-dialog-content mdc-dialog__content custom-dialog-content' aaname='' check:innerText='⚠️&amp;#xD;&amp;#xA;Important Notice&amp;#xD;&amp;#xA;✕&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;UiBank is an application used only for demo purposes. It doesn&amp;apos;t require' /&gt;" SearchSteps="Selector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetUrl CurrentUrl="[str_BrowserUrl]" DisplayName="Get URL" sap:VirtualizedContainerService.HintSize="510,87" sap2010:WorkflowViewState.IdRef="NGetUrl_1" Version="V3" />
+            <If Condition="[str_BrowserUrl.Contains(&quot;accounts&quot;)]" sap:VirtualizedContainerService.HintSize="510,1065" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,540" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" ReportId="{x:Null}" TestId="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="StepStatus_5" Status="Compare" StepDescription="Verify Log in success" StepName="Logged IN" TakeScreenshot="True" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button_Logout'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/accounts" ContentHash="3T0uRlmfOkC4Uek9puUdOg" CvTextArea="1072, 183, 64, 21" CvTextArgument="Logout" CvType="Text" DesignTimeRectangle="1066, 170, 77, 43" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl aaname='Logout' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Logout' tag='A' type='' class='nav-link text-dark' check:innerText='Logout' /&gt;" Guid="d1508946-fe16-45f2-9ce8-dff43aa57d6d" InformativeScreenshot="45b3b36a64f0edcba4e5fc41a8218b85.png" Reference="UtFUQI9ND0e4PF4l4r9ArQ/xPKk11qg7UeaZBRG44JBew" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_Result]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Pass</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,343" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="StepStatus_6" ReportId="[int_RepID]" Status="Pass" StepDescription="Verify Login Failure" StepName="Login Failed" TakeScreenshot="True" TestId="[str_TestID02]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[str_Result]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">Fail</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="ApzJjTVb_ESpHC89mmNDpQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURf/////5+P/z8P7u6f7o4v7i2v7c0/7WzP7Rxf3Lvf3Ftv2/r/25p/2zoPyumfyokfyiiv2dhP2XfPyMbvyGZvyAX/x6WPx1UftvSftpQvtjO/tdM/tXLPpSJfpMHfpGFiDugfMAAANRSURBVHhe7ZvrkqIwEEZRvLDehnVUvA15/7ecAB9COonaVcnGrerzZ2Y6SB8hJAF6svJTydSnImZ8xIyPmPERMz5ixkfM+IgZH2q2x+ooAd9QANRsliWjgAIQszcQMz5ixkfM+IgZHzHjk9xsWkzwGyGt2fbUZjlt8feYlGbzM7IodZ4jNpDQbFsjScsXog/SmS0MMaWWiPckM5tckKLnSq6EZGZfyDBAzmcys6H399zQApKZ/SDDCDNZKrMcCcYUaOtgmS0LkyniPubYrmc0aJG8LRu0dbDMboj2mF/ShtzMqm/ENQuExvxBW0cqs4yMZg3miJbMjA5nSv2YA1oysz1iAwe0gGRmU7qznxwtIJkZzUyuzJRmZH4i5zKpWba8Iq5nJnPEaEhplk12x0buetw5VtxJzVoW+ElJb+ZDzFrETMw6xEzzSlvMWsRMzDrETCNmTsRMzICYtYiZmHWImUbMnIiZmAExaxEzMet4bjY8v++grz0o/86sQrSHa7ZHvCWo2RHRnhJxH/SbGNsHNaM745oZ5T9BzUpEe+jOKE/7ZVAzWv1xQdzDFJs9MK7loGYbRHtqT+kYIPsmL8qDmq0QfeB7m9Wxw1YPjLe+Qc2s02OVZhl0ZW8DZnlNUDOrYOCKuJOcFj6YucOaWQUDtGhsjHUyzYE5rBm9BOy33wNWgRnZWVizGcIDK7TY0MGPVnGFNbNWG+ruGzjmVnkNSR3YzK5MubgLqmbWd6CHN7CZfTrdag4xOmEENrOWG5rbGm0D2zvaRuzQ1hPazFU3ps6rcW+brOlM3mB1yNBmjuqshvq4KYpFtiiKHR35AT1k4c2sufM9aqs3BjezloPvYR2yCGa5o3e/hKbVhDejH3kHWvncEMHMnndeUds19nHM2F3NOblGMZt6RgY3tT0SN0Qxs3f7hLtnDRfJzFFE7+FCSj4fxDLL1o4iYgcH7+1VNLMs3792q548LYpnppc6L3rb+elTrJhmeuVx8B+3k38h3hLXTLP861h9XPfGushJdDNNvi7LU1Xp+fRWVcey3PguR4MV/iO+hx7iEGZxEDM+YsZHzPiIGR8x4yNmfMSMj5jx+W/NzlUyyO0FNfscxIyPmPERMz5ixkfM+HyqmVK/YWzC+DlRlekAAAAASUVORK5CYII=" InformativeScreenshot="7530670f1d4c36b1a993d3b876fdb9c3.jpg" Reference="UtFUQI9ND0e4PF4l4r9ArQ/g1Fdt3ujkUS8KYEZA31Hfg" Selector="&lt;html app='chrome.exe' title='UiBank' /&gt;" Title="UiBank" Url="https://uibank.uipath.com/welcome" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

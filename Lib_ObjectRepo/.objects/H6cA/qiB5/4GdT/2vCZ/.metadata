@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Button_ApplyNewAccount",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "2vCZPiYPtEqEnwQWN0GLwg",
+  "Reference": "UtFUQI9ND0e4PF4l4r9ArQ/2vCZPiYPtEqEnwQWN0GLwg",
+  "ParentRef": "UtFUQI9ND0e4PF4l4r9ArQ/4GdT9topDkeqPQU7U8jzZQ",
+  "Created": "2024-02-12T14:56:21.3285275Z",
+  "Updated": "2024-02-12T14:56:45.6244339Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

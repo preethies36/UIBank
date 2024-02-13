@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="w2qDsNY-lUq8538ZYIZoVQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts/account-create-results/54073173/Test1" CvTextArea="471, 388, 418, 53" CvTextArgument="Congratulations!" CvType="Text" DesignTimeRectangle="256, 383, 853, 58" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Congratulations!'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white header' aaname=' Congratulations! ' check:innerText='Congratulations!' /&gt;" Guid="ba414be6-d4bc-4fe4-b89d-1b8ea4817c9f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ceda15336cb3e8846e196936f64c0261.png" xmlns="">0WZDJLG4vckq9A0d9KKVp2w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

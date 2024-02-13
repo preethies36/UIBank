@@ -1,0 +1,16 @@
+﻿{
+  "Name": "Text_SuccessMessage",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "4fXJ2LaBz0OKeFSUlPraFA",
+  "Reference": "UtFUQI9ND0e4PF4l4r9ArQ/4fXJ2LaBz0OKeFSUlPraFA",
+  "ParentRef": "UtFUQI9ND0e4PF4l4r9ArQ/VgZ9FJhUaEK_37x0OqbKjQ",
+  "Created": "2024-02-12T15:13:46.2978911Z",
+  "Updated": "2024-02-12T15:14:22.4094396Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

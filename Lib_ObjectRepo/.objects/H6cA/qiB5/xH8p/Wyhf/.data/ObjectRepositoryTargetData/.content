@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cKNYDKbpSUm5i0qfOWyCyg" Reference="UtFUQI9ND0e4PF4l4r9ArQ/WyhfM4jn3Em6kgShGKAjfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts/account-create-results/54073173/Test1" CvTextArea="733, 500, 65, 14" CvTextArgument="54073173" CvType="Text" DesignTimeRectangle="736, 498, 61, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'54073173'" FullSelectorArgument="&lt;webctrl id='accountId' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='accountId' tag='SPAN' type='' class='text-white small-text' aaname=' 54073173 ' /&gt;" Guid="f3ef758a-3023-4173-97df-634de1bc1e08" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="471, 388, 418, 53" CvTextArgument="Congratulations!" CvType="Text" DesignTimeRectangle="256, 383, 853, 58" ElementType="Text" FriendlyName="'Congratulations!'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white header' aaname=' Congratulations! ' check:innerText='Congratulations!' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f844eba04a2b28d56b04db5f683c6e01.png" xmlns="">08NdwNuBs6UuTlrVu1mMLfA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

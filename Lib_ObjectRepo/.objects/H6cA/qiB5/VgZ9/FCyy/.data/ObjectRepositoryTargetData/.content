@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="e5VX5F1zj0epc1bwccjzHQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://uibank.uipath.com/accounts/account-apply" CvElementArea="288, 438, 795, 58" CvType="InputBox" DesignTimeRectangle="288, 440, 789, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'SELECT typeOfAccount'" FullSelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='typeOfAccount' tag='SELECT' type='text' class='form-control uibank-input ng-pristine ng-invalid ng-touched' aaname='Type of Account' /&gt;" Guid="a02ddda8-f352-4160-b593-4c9cd01dca4e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="286, 423, 94, 14" CvTextArgument="Type of Account" CvType="Text" DesignTimeRectangle="288, 421, 90, 19" ElementType="Text" FriendlyName="'Type of Account'" FullSelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Type of Account' tag='LABEL' type='' class='uibank-label' check:innerText='Type of Account' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="264ba1defa7a3b36a0bed04b2311bff7.png" xmlns="">02wC6gmGR-USkAq2ihVHwZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
